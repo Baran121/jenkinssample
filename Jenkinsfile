@@ -9,7 +9,7 @@ pipeline {
 
     stage('BuildIt') {
       steps {
-        sh 'sh \'\'\' mvn clean install \'\'\''
+        sh 'sh "mvn clean package"'
       }
     }
 
